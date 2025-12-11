@@ -1,0 +1,90 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  @apply font-urbanist;
+}
+
+.text-color {
+  color: #05100b;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+/* .contactbg {
+  background-image: url("./assets/Gemini_Generated_Image_xq6e91xq6e91xq6e.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+} */
+
+.swipermain {
+  padding: 24px;
+  background-color: #f9faff;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  border-radius: 16px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* border: 1px solid #d9ddf3; */
+}
+
+.section-main-heading {
+  font-size: 52px;
+  font-weight: bold;
+  color: #05100b;
+  text-align: start;
+}
+
+.section-sub-heading {
+  color: #5777ff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+
+.my-gradient-box {
+  background: radial-gradient(
+    circle,
+    rgba(87, 119, 255, 0.48),
+    rgba(205, 214, 255, 0.37)
+  );
+  -webkit-background: radial-gradient(
+    circle,
+    rgba(87, 119, 255, 0.48),
+    rgba(205, 214, 255, 0.37)
+  );
+  -moz-background: radial-gradient(
+    circle,
+    rgba(87, 119, 255, 0.48),
+    rgba(205, 214, 255, 0.37)
+  );
+}
+
+/* 📱 Mobile (up to 640px) */
+@media (max-width: 640px) {
+  .section-main-heading {
+    font-size: 36px;
+    font-weight: bold;
+    color: #05100b;
+    text-align: start;
+  }
+  .section-sub-heading {
+    font-size: 18px;
+  }
+}
+
+/* 📱📲 Tablets (641px – 1024px) */
+@media (min-width: 641px) and (max-width: 1024px) {
+  .section-sub-heading {
+    font-size: 1.15rem; /* 18px */
+    letter-spacing: 0.09em;
+  }
+  .section-main-heading {
+    text-align: start;
+  }
+}
