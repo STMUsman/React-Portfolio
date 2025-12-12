@@ -65,7 +65,7 @@ const About = () => {
                                 { img: figma, title: "Figma", sub: "" }
                             ].map((item, i) => (
                                 <SwiperSlide key={i}>
-                                    <div className="swipermain">
+                                    <div className=" p-6 bg-[#f9faff] rounded-2xl text-center flex flex-col items-center ">
                                         <img className='w-32 md:w-36' src={item.img} alt={item.title} />
                                         <h2 className="text-xl font-semibold text-[#05100B]">{item.title}</h2>
                                         <p className="text-[#666] mt-2 text-sm">{item.sub}</p>
