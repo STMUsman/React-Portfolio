@@ -44,7 +44,6 @@ body {
   text-transform: uppercase;
 }
 
-
 .my-gradient-box {
   background: radial-gradient(
     circle,
@@ -85,4 +84,8 @@ body {
   .section-main-heading {
     text-align: start;
   }
+}
+
+.section-main-heading-contect {
+  text-align: start !important;
 }
