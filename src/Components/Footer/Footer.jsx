@@ -7,7 +7,7 @@ import { faWhatsapp, faLinkedin, faGithub, faTwitter } from '@fortawesome/free-b
 
 const Footer = () => {
   return (
-    <div className='w-full h-auto py-10 flex flex-col gap-8 my-gradient-box'>
+    <div className='w-full h-[30vh] py-10 flex flex-col gap-8 my-gradient-box'>
       <div className='w-full h-auto flex justify-center'><h1 className='text-[#05100B] font-bold text-3xl'>&lt;/&gt; | usmandev</h1></div>
       <div className='w-full h-auto flex gap-4 justify-center'>
 

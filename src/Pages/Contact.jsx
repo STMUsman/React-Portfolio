@@ -100,15 +100,15 @@ const Contact = () => {
                             <div>
                                 <form ref={formRef} action="" onSubmit={sendEmail} className='flex flex-col md:gap-4 lg:gap-7 gap-3'>
                                     <div className='flex gap-3 md:gap-4 lg:gap-7 justify-between'>
-                                        <input name='fullname' type="text" required placeholder='Full Name' className='border-2 bg-[#F9FAFF] w-full h-16 rounded-md p-5 border-[#ECEDF2]' />
-                                        <input name='email' type="text" required placeholder='Email Address' className='border-2 bg-[#F9FAFF] w-full h-16 rounded-md p-5 border-[#ECEDF2]' />
+                                        <input name='fullname' type="text" required placeholder='Full Name' className='border-2 bg-[#F9FAFF] w-full h-14 md:h-16 rounded-md p-3 md:p-5 border-[#ECEDF2]' />
+                                        <input name='email' type="text" required placeholder='Email Address' className='border-2 bg-[#F9FAFF] w-full h-14 md:h-16 rounded-md p-3 md:p-5 border-[#ECEDF2]' />
                                     </div>
                                     <div className='flex gap-3 md:gap-4 lg:gap-7 justify-between'>
-                                        <input name='phone' type="text" required placeholder='Phone Number' className='border-2 bg-[#F9FAFF] w-full h-16 rounded-md p-5 border-[#ECEDF2]' />
+                                        <input name='phone' type="text" required placeholder='Phone Number' className='border-2 bg-[#F9FAFF] w-full h-14 md:h-16 rounded-md p-3 md:p-5 border-[#ECEDF2]' />
                                         <select
                                             name="service"
                                             required
-                                            className="border-2 text-[#9CA3AF] bg-[#F9FAFF] w-full h-16 rounded-md px-5 border-[#ECEDF2] "
+                                            className="border-2 text-[#9CA3AF] bg-[#F9FAFF] w-full h-14 md:h-16 rounded-md px-3 md:px-5 border-[#ECEDF2] "
                                         >
                                             <option value="">Choose Service</option>
                                             <option value="web-development">Web Development</option>
@@ -117,7 +117,7 @@ const Contact = () => {
 
                                     </div>
                                     <div>
-                                        <textarea name="message" id="" required placeholder='Write Your Message' className='border-2 bg-[#F9FAFF] w-full h-40 rounded-md p-5 border-[#ECEDF2]'></textarea>
+                                        <textarea name="message" id="" required placeholder='Write Your Message' className='border-2 bg-[#F9FAFF] w-full h-24 md:h-40 rounded-md p-3 md:p-5 border-[#ECEDF2]'></textarea>
                                     </div>
                                     <div><input type="submit" value="Send Message" className='bg-[#5777FF] px-8 py-4 rounded-full text-[#F5F5F5] text-lg font-medium hover:bg-[#446AFF] duration-500' /></div>
                                 </form>
