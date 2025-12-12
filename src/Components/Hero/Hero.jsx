@@ -6,8 +6,8 @@ import myimage from '/src/assets/usman223-removebg-preview.png'
 const Hero = () => {
     return (
         <div className='w-full bg-[#F9FAFF]'>
-            <section className='w-full min-h-screen flex justify-center items-center' id='hero'>
-                <div className='w-[95%] md:w-[90%] lg:w-[85%] flex flex-col-reverse md:flex-row justify-between items-center gap-10 md:gap-5  mt-20'>
+            <section className='w-full h-[90vh] md:min-h-screen flex justify-center items-center' id='hero'>
+                <div className='w-[90%] md:w-[90%] lg:w-[85%] flex flex-col-reverse md:flex-row justify-between items-center gap-10 md:gap-5  mt-20'>
 
                     {/* LEFT TEXT */}
                     <div className='w-full md:w-[60%] lg:w-[60%] flex flex-col gap-7 md:gap-5 lg:gap-8 text-center md:text-left'>
@@ -32,7 +32,7 @@ const Hero = () => {
 
                     {/* RIGHT IMAGE */}
                     <div className='w-full md:w-[40%] lg:w-[40%] flex justify-center md:justify-end mt-10 md:mt-0'>
-                        <div className="rounded-br-[999px] rounded-bl-[999px] rounded-tr-none rounded-tl-[999px] p-[8px] bg-gradient-to-b from-[#5777FF] to-white w-72 h-72  lg:w-96 lg:h-96">
+                        <div className="rounded-br-[999px] rounded-bl-[999px] rounded-tr-none rounded-tl-[999px] p-[8px] bg-gradient-to-b from-[#5777FF] to-white w-64 h-64 md:w-72 md:h-72 lg:w-96 lg:h-96">
                             <div className="rounded-br-[999px] rounded-bl-[999px] rounded-tr-none rounded-tl-[999px] overflow-hidden w-full h-full bg-white flex justify-center items-center">
                                 <img className="w-full h-full object-contain mt-4 " src={myimage} alt="Usman" />
                             </div>
