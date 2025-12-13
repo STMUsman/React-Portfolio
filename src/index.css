@@ -89,3 +89,7 @@ body {
 .section-main-heading-contect {
   text-align: start !important;
 }
+
+.relative {
+  position: static !important;
+}

@@ -49,15 +49,9 @@ export default function Example() {
       <div className="mx-auto w-11/12 px-2 sm:px-6 lg:px-0">
         <div className="relative w-full flex h-24 items-center">
           <div className="flex flex-1 justify-start">
-            {/* <div className='w-auto h-auto '>
+            <div className='w-auto h-auto '>
               <h1 className='text-[#05100B] font-bold text-2xl'>&lt;/&gt; | usmandev</h1>
-            </div> */}
-            <div className="w-auto h-auto whitespace-nowrap">
-              <h1 className="text-[#05100B] font-bold text-2xl inline-flex items-center">
-                &lt;/&gt; | usmandev
-              </h1>
             </div>
-
           </div>
           <div className="absolute inset-y-0 right-5 flex items-center sm:hidden">
             <DisclosureButton className="group relative inline-flex items-center justify-center p-2 text-white ">
