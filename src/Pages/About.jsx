@@ -20,7 +20,7 @@ import tailwind from '../assets/icons8-tailwind-css-480.png';
 const About = () => {
     return (
         <div className='w-full min-h-screen flex justify-center items-center  bg-[#F9FAFF]'>
-            <section className='w-full py-8 md:py-12 lg:py-16 flex justify-center' id='about'>
+            <section className='w-full py-8 md:py-12 lg:py-16 flex justify-center scroll-mt-24' id='about'>
                 <div className='w-[90%] md:w-[90%] lg:w-[85%] flex flex-col justify-center items-center  bg-[#ffffff] rounded-3xl gap-2 py-14 px-6 md:px-0 md:py-14 lg:py-20 '>
 
                     {/* Headings */}

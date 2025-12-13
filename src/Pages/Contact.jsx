@@ -31,7 +31,7 @@ const Contact = () => {
         <>
             <div className='w-full min-h-screen flex justify-center items-center bg-[#F9FAFF]'>
 
-                <section className='w-full py-8 md:py-12 lg:py-16 flex justify-center contactbg' id='contact'>
+                <section className='w-full py-8 md:py-12 lg:py-16 flex justify-center contactbg scroll-mt-24' id='contact'>
                     <div className='w-[90%] md:w-[90%] lg:w-[85%] h-screen flex flex-col md:flex-row gap-10 md:gap-5  items-center justify-start  bg-transparent'>
                         <div className='flex flex-col gap-1 w-full md:w-1/2'>
                             <h1 className='section-sub-heading'>Get In Touch</h1>
