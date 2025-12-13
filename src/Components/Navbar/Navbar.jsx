@@ -53,7 +53,7 @@ export default function Example() {
               <h1 className='text-[#05100B] font-bold text-2xl'>&lt;/&gt; | usmandev</h1>
             </div>
           </div>
-          <div className="absolute inset-y-0 right-5 flex items-center sm:hidden">
+          <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
             <DisclosureButton className="group relative inline-flex items-center justify-center p-2 text-white ">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
@@ -114,10 +114,16 @@ export default function Example() {
               as="a"
               href={item.href}
               aria-current={item.current ? 'page' : undefined}
-              className={classNames(
-                item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
-                'block rounded-md px-3 py-2 text-base font-semibold',
-              )}
+              // className={classNames(
+              //   item.current ? 'bg-gray-900 text-white' : 'text-gray-300 hover:bg-gray-700 hover:text-white',
+              //   'block rounded-md px-3 py-2 text-base font-semibold',
+              // )}
+              className={`block rounded-md px-3 py-2 text-base font-semibold transition
+      ${active === item.href
+                  ? 'bg-[#5777FF] text-white'
+                  : 'text-gray-300 hover:bg-gray-700 hover:text-white'
+                }`}
+              onClick={() => setActive(item.href)}
             >
               {item.name}
             </DisclosureButton>
