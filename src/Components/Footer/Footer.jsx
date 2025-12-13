@@ -42,7 +42,7 @@ const Footer = () => {
           rel="noopener noreferrer">
           <FontAwesomeIcon icon={faFacebook} className='text-3xl  text-[#5777FF] hover:text-[#446AFF]' /> </a> */}
       </div>
-      <div className='w-full h-auto flex justify-center text-[#05100B] font-normal text-base'>© 2025 UsmanDev. All rights reserved.</div>
+      <div className='w-full h-auto flex justify-center text-[#05100B] font-medium text-base'>© 2025 UsmanDev. All rights reserved.</div>
     </div>
   )
 }
