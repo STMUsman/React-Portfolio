@@ -54,11 +54,11 @@ export default function Example() {
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
-            <DisclosureButton className="group relative inline-flex items-center justify-center p-2 text-white ">
+            <DisclosureButton className="group relative inline-flex items-center justify-center p-2 text-black ">
               <span className="absolute -inset-0.5" />
               <span className="sr-only">Open main menu</span>
-              <Bars3Icon aria-hidden="true" className="block size-6 group-data-open:hidden" />
-              <XMarkIcon aria-hidden="true" className="hidden size-6 group-data-open:block" />
+              <Bars3Icon aria-hidden="true" strokeWidth={2} className="block size-6 group-data-open:hidden" />
+              <XMarkIcon aria-hidden="true" strokeWidth={2} className="hidden size-6 group-data-open:block" />
             </DisclosureButton>
           </div>
           <div className="flex flex-1 justify-center sm:items-stretch">
