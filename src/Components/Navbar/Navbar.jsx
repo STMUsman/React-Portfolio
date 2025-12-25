@@ -12,9 +12,9 @@ const navigation = [
   { name: 'Contact', href: '#contact', current: false },
 ]
 
-function classNames(...classes) {
-  return classes.filter(Boolean).join(' ')
-}
+// function classNames(...classes) {
+//   return classes.filter(Boolean).join(' ')
+// }
 
 export default function Example() {
 
@@ -50,7 +50,7 @@ export default function Example() {
         <div className="relative w-full flex h-24 items-center">
           <div className="flex flex-1 justify-start">
             <div className='w-auto h-auto '>
-              <h1 className='text-[#05100B] font-bold text-2xl'>&lt;/&gt; | usmandev</h1>
+              <h1 className='text-[#05100B] font-bold text-2xl'>&lt;/&gt; | Usman </h1>
             </div>
           </div>
           <div className="absolute inset-y-0 right-0 flex items-center sm:hidden">
