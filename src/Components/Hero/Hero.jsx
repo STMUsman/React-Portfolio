@@ -20,9 +20,11 @@ const Hero = () => {
                         </p>
 
                         <div className='flex gap-3 lg:gap-4 md:mt-4 justify-center md:justify-start'>
-                            <button className='bg-[#5777FF] border-2 flex items-center gap-1.5 md:gap-2 border-[#5777FF]  w-40 py-3 md:w-44 lg:w-48 lg:py-4 justify-center rounded-full text-[#F5F5F5] font-semibold text-sm shadow-md hover:bg-[#446aff] hover:border-[#446aff] hover:text-[#F5F5F5] transition duration-300'>
-                                <FontAwesomeIcon icon={faEnvelope} className="text-lg" /> CONTACT ME
-                            </button>
+                            <a href="tel:+94762788626">
+                                <button className='bg-[#5777FF] border-2 flex items-center gap-1.5 md:gap-2 border-[#5777FF]  w-40 py-3 md:w-44 lg:w-48 lg:py-4 justify-center rounded-full text-[#F5F5F5] font-semibold text-sm shadow-md hover:bg-[#446aff] hover:border-[#446aff] hover:text-[#F5F5F5] transition duration-300'>
+                                    <FontAwesomeIcon icon={faEnvelope} className="text-lg" /> CONTACT ME
+                                </button>
+                            </a>
 
                             <button className='bg-transparent border-2 flex items-center gap-1.5 md:gap-2 border-[#5777FF]  w-40 py-3 md:w-44 lg:w-48 lg:py-4 justify-center rounded-full text-[#05100B] font-semibold text-sm shadow-md hover:bg-[#446aff] hover:border-[#446aff] hover:text-[#F5F5F5] transition duration-300'>
                                 <FontAwesomeIcon icon={faDownload} className="text-lg" /> DOWNLOAD CV
