@@ -7,7 +7,7 @@ const projects = [
     { name: 'Akollections E-Commerce Website', href: 'https://akollections.com/' },
     { name: 'Life Lanka Travels Website', href: 'https://lifelankatravels.com/' },
     { name: 'Tools Lanka E-Commerce Website', href: 'https://toolslanka.lk/' },
-    { name: 'Shaggy Removal Service Website', href: 'http://mytestsite.42web.io/' },
+    { name: 'Shaggy Removal Service Website', href: 'http://shaggyremovalservice.com.au/' },
     { name: 'Galaxy Store E-Commerce Platform', href: '#' },
 ]
 
