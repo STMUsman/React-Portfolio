@@ -116,52 +116,77 @@ export default function Example() {
       </div>
 
       {/* Backdrop overlay for the mobile drawer */}
-      <DisclosurePanel static className="sm:hidden">
-        {({ open }) => (
-          <>
-            <div
-              aria-hidden="true"
-              onClick={() => document.activeElement?.blur()}
-              className={`fixed inset-0 z-30 bg-black/40 transition-opacity duration-300 ease-out
-              ${open ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'}`}
-            />
-            <div
-              className={`fixed top-0 left-0 z-40 h-full w-2/3 max-w-xs transform bg-gray-800 p-4 shadow-md
-              transition-transform duration-300 ease-in-out
-              ${open ? 'translate-x-0' : '-translate-x-full'}`}
-            >
-              {/* Close Button */}
-              <div className="flex justify-end">
-                <DisclosureButton className="text-white transition-colors duration-200 hover:text-gray-400">
-                  <XMarkIcon className="h-6 w-6" />
-                </DisclosureButton>
-              </div>
+<DisclosurePanel className="sm:hidden">
+  {({ open }) => (
+    <>
+      {/* Backdrop */}
+      <div
+        aria-hidden="true"
+        className={`fixed inset-0 z-[60] bg-black/40 transition-opacity duration-300
+          ${
+            open
+              ? "opacity-100 pointer-events-auto"
+              : "opacity-0 pointer-events-none"
+          }`}
+      />
 
-              {/* Navigation Links */}
-              <div className="mt-4 space-y-1">
-                {navigation.map((item, index) => (
-                  <DisclosureButton
-                    key={item.name}
-                    as="a"
-                    href={item.href}
-                    aria-current={item.current ? 'page' : undefined}
-                    style={{ transitionDelay: open ? `${index * 60}ms` : '0ms' }}
-                    className={`block rounded-md px-3 py-2 text-base font-semibold transition-all duration-300 ease-out
-                    ${open ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-2'}
-                    ${active === item.href
-                        ? 'bg-[#5777FF] text-white'
-                        : 'text-gray-300 hover:bg-gray-700 hover:text-white'
-                      }`}
-                    onClick={() => setActive(item.href)}
-                  >
-                    {item.name}
-                  </DisclosureButton>
-                ))}
-              </div>
-            </div>
-          </>
-        )}
-      </DisclosurePanel>
+      {/* Mobile Drawer */}
+      <div
+        className={`fixed top-0 left-0 z-[70] h-screen w-2/3 max-w-xs
+          bg-gray-800 p-4 shadow-xl
+          transition-transform duration-300 ease-in-out
+          ${
+            open
+              ? "translate-x-0"
+              : "-translate-x-full"
+          }`}
+      >
+        {/* Close Button */}
+        <div className="flex justify-end">
+          <DisclosureButton
+            className="text-white transition-colors duration-200 hover:text-gray-400"
+          >
+            <XMarkIcon className="h-6 w-6" />
+          </DisclosureButton>
+        </div>
+
+        {/* Navigation */}
+        <div className="mt-4 space-y-1">
+          {navigation.map((item, index) => (
+            <DisclosureButton
+              key={item.name}
+              as="a"
+              href={item.href}
+              aria-current={
+                active === item.href ? "page" : undefined
+              }
+              style={{
+                transitionDelay: open
+                  ? `${index * 60}ms`
+                  : "0ms",
+              }}
+              className={`block rounded-md px-3 py-2 text-base font-semibold
+                transition-all duration-300 ease-out
+                ${
+                  open
+                    ? "opacity-100 translate-x-0"
+                    : "opacity-0 -translate-x-2"
+                }
+                ${
+                  active === item.href
+                    ? "bg-[#5777FF] text-white"
+                    : "text-gray-300 hover:bg-gray-700 hover:text-white"
+                }`}
+              onClick={() => setActive(item.href)}
+            >
+              {item.name}
+            </DisclosureButton>
+          ))}
+        </div>
+      </div>
+    </>
+  )}
+</DisclosurePanel>
 
     </Disclosure>
   )
