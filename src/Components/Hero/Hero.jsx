@@ -52,12 +52,12 @@ const Hero = () => {
                             ${mounted ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-6'}`}
                         >
                             <a href="tel:+94762788626">
-                                <button className='group bg-[#5777FF] border-2 flex items-center gap-1.5 md:gap-2 border-[#5777FF]  w-40 py-3 md:w-44 lg:w-48 lg:py-4 justify-center rounded-full text-[#F5F5F5] font-semibold text-sm shadow-md transition-all duration-300 ease-out hover:bg-[#446aff] hover:border-[#446aff] hover:text-[#F5F5F5] hover:shadow-lg hover:shadow-[#5777FF]/40 hover:-translate-y-1 active:translate-y-0 active:scale-95'>
+                                <button className='group bg-[#5777FF] border-2 flex items-center gap-1.5 md:gap-2 border-[#5777FF]  w-40 py-3 md:w-44 lg:w-48 lg:py-4 justify-center rounded-full text-[#F5F5F5] font-semibold text-sm shadow-md transition-all duration-500 ease-out hover:bg-[#446aff] hover:border-[#446aff] hover:text-[#F5F5F5] hover:shadow-lg hover:shadow-[#5777FF]/40 hover:-translate-y-1 active:translate-y-0 active:scale-95'>
                                     <FontAwesomeIcon icon={faEnvelope} className="text-lg transition-transform duration-300 group-hover:scale-110" /> CONTACT ME
                                 </button>
                             </a>
 
-                            <button className='group bg-transparent border-2 flex items-center gap-1.5 md:gap-2 border-[#5777FF]  w-40 py-3 md:w-44 lg:w-48 lg:py-4 justify-center rounded-full text-[#05100B] font-semibold text-sm shadow-md transition-all duration-300 ease-out hover:bg-[#446aff] hover:border-[#446aff] hover:text-[#F5F5F5] hover:shadow-lg hover:shadow-[#5777FF]/40 hover:-translate-y-1 active:translate-y-0 active:scale-95'>
+                            <button className='group bg-transparent border-2 flex items-center gap-1.5 md:gap-2 border-[#5777FF]  w-40 py-3 md:w-44 lg:w-48 lg:py-4 justify-center rounded-full text-[#05100B] font-semibold text-sm shadow-md transition-all duration-500 ease-out hover:bg-[#446aff] hover:border-[#446aff] hover:text-[#F5F5F5] hover:shadow-lg hover:shadow-[#5777FF]/40 hover:-translate-y-1 active:translate-y-0 active:scale-95'>
                                 <FontAwesomeIcon icon={faDownload} className="text-lg transition-transform duration-300 group-hover:-translate-y-0.5" /> DOWNLOAD CV
                             </button>
                         </div>

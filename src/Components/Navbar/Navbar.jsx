@@ -105,7 +105,7 @@ export default function Example() {
                     Let's Talk
                     <FontAwesomeIcon
                       icon={faPhone}
-                      className="text-lg transition-transform duration-300 group-hover:rotate-12"
+                      className="text-lg transition-transform duration-500 group-hover:rotate-12"
                     />
                   </MenuButton>
                 </a>

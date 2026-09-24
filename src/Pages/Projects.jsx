@@ -1,14 +1,20 @@
 import React, { useEffect, useRef, useState } from 'react'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
+import shaggyimage from '../assets/shaggyimage.png'
+import cananimage from '../assets/cannanimages.png'
+import toolslankaimage from '../assets/toolslankaimage.png'
+import akollectionimage from '../assets/akollectionimage.png'
+import galaxystoreimage from '../assets/galaxystoreimage.png'
+import lifelankaimage from '../assets/lifelankaimage.png'
 
 const projects = [
-    { name: 'Canangifts Trading Website', href: 'https://canangifts.com/' },
-    { name: 'Akollections E-Commerce Website', href: 'https://akollections.com/' },
-    { name: 'Life Lanka Travels Website', href: 'https://lifelankatravels.com/' },
-    { name: 'Tools Lanka E-Commerce Website', href: 'https://toolslanka.lk/' },
-    { name: 'Shaggy Removal Service Website', href: 'http://shaggyremovalservice.com.au/' },
-    { name: 'Galaxy Store E-Commerce Platform', href: '#' },
+    { name: 'Canangifts Trading Website', href: 'https://canangifts.com/', image: cananimage },
+    { name: 'Akollections E-Commerce Website', href: 'https://akollections.com/', image: akollectionimage },
+    { name: 'Life Lanka Travels Website', href: 'https://lifelankatravels.com/', image: lifelankaimage },
+    { name: 'Tools Lanka E-Commerce Website', href: 'https://toolslanka.lk/', image: toolslankaimage },
+    { name: 'Shaggy Removal Service Website', href: 'http://shaggyremovalservice.com.au/', image: shaggyimage },
+    { name: 'Galaxy Store E-Commerce Platform', href: '#', image: galaxystoreimage },
 ]
 
 const Projects = () => {
@@ -73,14 +79,39 @@ const Projects = () => {
                                     href={project.href}
                                     target="_blank"
                                     rel="noopener noreferrer"
-                                    style={{ transitionDelay: visible ? `${150 + index * 90}ms` : '0ms' }}
-                                    className={`group relative overflow-hidden rounded-lg min-w-72 min-h-52 md:min-w-80 md:min-h-52 lg:min-w-96 lg:min-h-60
-                                    my-gradient-box flex flex-col justify-center items-center gap-3 text-xl font-semibold text-center
-                                    p-4 cursor-pointer transition-all duration-500 ease-out
-                                    hover:-translate-y-2 hover:shadow-xl hover:shadow-[#5777FF]/20
-                                    ${visible ? 'opacity-100 translate-y-0 scale-100' : 'opacity-0 translate-y-6 scale-95'}`}
+                                    style={{
+                                        transitionDelay: visible
+                                            ? `${150 + index * 90}ms`
+                                            : '0ms',
+
+                                        backgroundImage: `url(${project.image})`,
+                                        backgroundSize: 'cover',
+                                        backgroundPosition: 'center',
+                                        backgroundRepeat: 'no-repeat',
+                                    }}
+                                    className={`group relative overflow-hidden rounded-lg
+        min-w-72 min-h-52
+        md:min-w-80 md:min-h-52
+        lg:min-w-96 lg:min-h-60
+        flex flex-col justify-center items-center
+        gap-3 text-xl font-semibold text-center
+        p-4 cursor-pointer
+        transition-all duration-500 ease-out
+        hover:-translate-y-2 hover:shadow-xl
+        hover:shadow-[#5777FF]/20
+        ${visible
+                                            ? 'opacity-100 translate-y-0 scale-100'
+                                            : 'opacity-0 translate-y-6 scale-95'
+                                        }`}
                                 >
-                                    <span className="transition-colors duration-300 group-hover:text-[#5777FF]">
+                                    {/* Dark overlay */}
+                                    <span
+                                        aria-hidden="true"
+                                        className="absolute inset-0 bg-black/60"
+                                    />
+
+                                    {/* Project content */}
+                                    <span className="relative z-10 text-white transition-colors duration-300 group-hover:text-[#5777FF]">
                                         {project.name}
                                     </span>
 
